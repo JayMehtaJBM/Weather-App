@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/res.css" />
+  </head>
+  <body>
+    <div class="box">
+        <h2 id="now"></h2>
+        <form action="/post" method="POST">
+          <div class="icon">
+            <img src="<%= icon %>" alt="">
+          </div>
+          <div class="inpuBox">
+            <h3><span class="dd">Name of the city :</span>  <%= name %></h3>
+            <h3 class="des"><span class="dd">Description : </span><span class="desc"><%= Wdescription %></span></h3>
+            
+          </div>
+
+          <button type="submit">Back to Home </button>
+        </form>
+        <p>Made By Jay Mehta</p>
+      </div>
+      
+  </body>
+<p class="id"> <%= ic %> </p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</html>
+
